@@ -11,6 +11,8 @@ public class Main implements ActionListener {
 	private JFrame frame;
 	private JLabel title, label1, label2, label3;
 	private JTextField field1, field2, field3;
+	private JButton btnAdd, btnDelete, btnUpdate, btnSearch;
+	//private JTable table;
 	
 	
 	
@@ -55,7 +57,17 @@ public class Main implements ActionListener {
 		p2.add(field3);
 		frame.add(p2);
 		
+		JPanel p3 = new JPanel();
+		btnAdd = new JButton("Add");
+		btnDelete = new JButton("Delete");
+		btnUpdate = new JButton("Update");
+		btnSearch = new JButton("Search");
 		
+		p3.add(btnAdd);
+		p3.add(btnDelete);
+		p3.add(btnUpdate);
+		p3.add(btnSearch);
+		frame.add(p3);
 		
 		
 		
